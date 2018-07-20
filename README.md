@@ -6,7 +6,5 @@ this project is based in [this question, Open AVD or emulators without opening A
 
 The big thanks for the help:
 
-- Ha Duy Trung (@hidroh)
-- Alex Ferreira (@alex1a)
-
-
+- [Ha Duy Trung (@hidroh)](https://github.com/hidroh)
+- [Alex Ferreira (@alex1a)](https://github.com/alex1a)
