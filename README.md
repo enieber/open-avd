@@ -5,9 +5,9 @@ this project is based in [this question, Open AVD or emulators without opening A
 
 ## Execute
 
-- [x] linux
-- [x] windows
-- [ ] macOS
+- [x] linux (bin avd)
+- [x] windows (execute avd.sh)
+- [x] macOS (execute avd-mac.sh)
 
 ## Thanks
 
