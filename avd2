@@ -1,10 +1,15 @@
 #!/bin/sh
 
-pushd ${ANDROID_HOME}/emulator
-./emulator -list-avds | cat -n
+sdk="$([ -d $HOME/Android/sdk ] && echo $HOME/Android/sdk || echo $HOME/Android/Sdk)"
+
+export ANDROID_SDK=$sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
+
+emulator="${sdk}/emulator/emulator"
+echo ${emulator}
+emulator -list-avds | cat -n
 printf "Select AVD: "
 read index
-avd=$(./emulator -list-avds | sed "${index}q;d")
+avd=$(emulator -list-avds | sed "${index}q;d")
 echo "Selected $avd"
-./emulator -avd $avd
-popd
+emulator -avd $avd
