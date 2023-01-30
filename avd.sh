@@ -1,4 +1,5 @@
-pushd ${ANDROID_HOME}/tools
+#!/usr/bin/sh
+pushd ${ANDROID_HOME}/emulator
 ./emulator -list-avds | cat -n
 printf "Select AVD: "
 read index
